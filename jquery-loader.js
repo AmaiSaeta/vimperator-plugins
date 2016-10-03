@@ -81,7 +81,7 @@ var INFO = xml`
       get document () content.document.wrappedJSObject,
       get location () content.window.location.wrappedJSObject
     };
-    liberator.eval(File(filepath).read(), context);
+    liberator.eval(io.File(filepath).read(), context);
     return context.window.jQuery;
   };
 
